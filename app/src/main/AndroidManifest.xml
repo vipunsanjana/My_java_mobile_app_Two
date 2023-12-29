@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -10,12 +9,12 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
 
-
-    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
-
 
     <application
         android:allowBackup="true"
@@ -27,6 +26,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppTwo"
         tools:targetApi="31">
+
+        <activity
+            android:name=".WebView"
+            android:exported="false" />
+        <activity
+            android:name=".OpenShare"
+            android:exported="false" />
+        <activity
+            android:name=".SendEmail"
+            android:exported="false" />
+        <activity
+            android:name=".SendCall"
+            android:exported="false" />
+        <activity
+            android:name=".SendSMS"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

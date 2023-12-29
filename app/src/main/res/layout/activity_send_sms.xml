@@ -4,33 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/teal_200">
+    tools:context=".SendSMS"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Android Permissions"
+        android:text="Send SMS"
+        android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="30dp"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"/>
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
 
-    <Button
-        android:id="@+id/btn_SMS"
+    <EditText
+        android:id="@+id/et_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send SMS"
+        android:hint="Send Number"
+        android:inputType="phone"
         android:textAllCaps="false"
-        android:layout_marginTop="80dp"
-        android:background="@color/teal_200"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:padding="10dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,11 +40,29 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
-    <Button
-        android:id="@+id/btn_Call"
+    <EditText
+        android:id="@+id/et_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Call"
+        android:hint="Send MSG"
+        android:lines="2"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_number" />
+
+
+    <Button
+        android:id="@+id/btn_SMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
         android:textAllCaps="false"
         android:layout_marginTop="60dp"
         android:background="@color/teal_200"
@@ -52,58 +72,7 @@
         android:layout_marginRight="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_SMS" />
-
-
-    <Button
-        android:id="@+id/btn_Email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Send E-mail"
-        android:textAllCaps="false"
-        android:layout_marginTop="60dp"
-        android:background="@color/teal_200"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Call" />
-
-
-    <Button
-        android:id="@+id/btn_Share"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Share"
-        android:textAllCaps="false"
-        android:layout_marginTop="60dp"
-        android:background="@color/teal_200"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Email" />
-
-
-    <Button
-        android:id="@+id/btn_WebView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Web View"
-        android:textAllCaps="false"
-        android:layout_marginTop="60dp"
-        android:background="@color/teal_200"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Share" />
+        app:layout_constraintTop_toBottomOf="@+id/et_msg" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
