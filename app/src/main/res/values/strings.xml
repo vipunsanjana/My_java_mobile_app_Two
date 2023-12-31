@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MyAppTwo</string>
+
+    <string name="main_sms">Send SMS</string>
+    <string name="main_call">Send Call</string>
+    <string name="main_email">Send E-mail</string>
+    <string name="main_share">Open Share</string>
+    <string name="main_webview">Web view</string>
 </resources>

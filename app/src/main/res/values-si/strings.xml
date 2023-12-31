@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyAppTwo</string>
+
+    <string name="main_sms">SMS යවන්න</string>
+    <string name="main_call">ඇමතුමක් යවන්න</string>
+    <string name="main_email">ඊමේල් යවන්න</string>
+    <string name="main_share">Share විවෘත කරන්න</string>
+    <string name="main_webview">වෙබ් දසුන</string>
+</resources>
