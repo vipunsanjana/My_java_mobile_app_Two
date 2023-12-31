@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intentShare = new Intent(getApplicationContext(), OpenShare.class);
             startActivity(intentShare);
         } else if (id == R.id.btn_WebView) {
-            Intent intentWeb = new Intent(getApplicationContext(), WebView.class);
+            Intent intentWeb = new Intent(getApplicationContext(), WebViewActivity.class);
             startActivity(intentWeb);
         }
     }
